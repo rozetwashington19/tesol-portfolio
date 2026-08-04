@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozario Washington | TESOL / ENL Educator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="particleCanvas"></canvas>
+
+<script>
+const canvas = document.getElementById('particleCanvas');
+const ctx = canvas.getContext('2d');
+
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
+
+window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+});
+
+// Multilingual Words for TESOL theme
+const words = [
+    'Hello', 'Hola', 'Bonjour', 'Ciao', 'Hallo', 'Nǐ hǎo', 'Olá!',
+    'Namaste', 'Salam', 'Olapp', '안녕하세요!', ' مرحبا', 'Learn', 'Growth',
+    'Hej!', 'Welcome', 'Inspire', 'こんにちは', 'Здраво!', 'Привет!'
+];
+
+// Interactive Mouse Position
+const mouse = { x: null, y: null, radius: 120 };
+window.addEventListener('mousemove', (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+window.addEventListener('mouseleave', () => {
+    mouse.x = null;
+    mouse.y = null;
+});
+
+class WordParticle {
+    constructor() {
+        this.reset();
+    }
+
+    reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.text = words[Math.floor(Math.random() * words.length)];
+        this.size = Math.random() * 12 + 12; // Font size between 12px and 24px
+        this.vx = (Math.random() - 0.5) * 0.6; // Slow drifting movement
+        this.vy = (Math.random() - 0.5) * 0.6;
+        this.baseAlpha = Math.random() * 0.25 + 0.1; // Subtle transparency
+        this.alpha = this.baseAlpha;
+    }
+
+    update() {
+        // Drifting motion
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Wrap around screen edges
+        if (this.x < -50) this.x = width + 50;
+        if (this.x > width + 50) this.x = -50;
+        if (this.y < -50) this.y = height + 50;
+        if (this.y > height + 50) this.y = -50;
+
+        // Mouse interaction (gently repels words)
+        if (mouse.x && mouse.y) {
+            let dx = mouse.x - this.x;
+            let dy = mouse.y - this.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < mouse.radius) {
+                let angle = Math.atan2(dy, dx);
+                let force = (mouse.radius - distance) / mouse.radius;
+                this.x -= Math.cos(angle) * force * 3;
+                this.y -= Math.sin(angle) * force * 3;
+                this.alpha = Math.min(this.baseAlpha + 0.4, 0.7); // Brighten near mouse
+            } else {
+                this.alpha = this.baseAlpha;
+            }
+        }
+    }
+
+    draw() {
+        ctx.fillStyle = `rgba(56, 189, 248, ${this.alpha})`; // Cyan accent glow
+        ctx.font = `${this.size}px 'Plus Jakarta Sans', sans-serif`;
+        ctx.fillText(this.text, this.x, this.y);
+    }
+}
+
+// Instantiate particles
+const particleCount = 35; // Keeps performance smooth
+const particles = [];
+for (let i = 0; i < particleCount; i++) {
+    particles.push(new WordParticle());
+}
+
+// Animation Loop
+function animate() {
+    ctx.clearRect(0, 0, width, height);
+    particles.forEach(p => {
+        p.update();
+        p.draw();
+    });
+    requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+   <nav class="navbar">
+    <div class="nav-brand">RW</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#featured-lesson">Curriculum</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+    </ul>
+</nav>
+
+    <header class="hero container">
+        <div class="hero-content">
+            <span class="badge">NYC Based TESOL Educator</span>
+            <h1>Hi, I'm <span class="gradient-text">Rozario Washington</span></h1>
+            <p class="hero-subtext">
+                Dedicated ENL Educator specializing in academic language development, differentiated instruction, and empowering multilingual learners to thrive.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn primary">Get in Touch</a>
+                <a href="#experience" class="btn secondary">View Experience</a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="IMG_4533.png" alt="Rozario Washington" class="hero-img">
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="section glass-card">
+            <h2 class="section-title">Professional Profile</h2>
+            <p class="profile-text">
+                Compassionate and dedicated educator with hands-on classroom experience supporting multilingual learners and students with diverse learning needs. Currently expanding professional expertise through a Master's program in TESOL and preparing for New York State ESOL certification. Passionate about language acquisition methodologies, culturally responsive pedagogy, and driving English language learners to thrive.
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-chip">ENL Instruction</div>
+                <div class="skill-chip">WIDA Standards</div>
+                <div class="skill-chip">Differentiated Instruction</div>
+                <div class="skill-chip">Small-Group Teaching</div>
+                <div class="skill-chip">Academic Language Development</div>
+                <div class="skill-chip">Inclusive Classrooms</div>
+                <div class="skill-chip">Collaboration</div>
+                <div class="skill-chip">Classroom Management</div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item glass-card">
+                    <div class="timeline-header">
+                        <h3>Paraprofessional</h3>
+                        <span class="timeline-date">2024 - Present</span>
+                    </div>
+                    <span class="company">NYC Public Schools</span>
+                    <ul>
+                        <li>Deliver critical instruction and emotional support to multilingual learners and students with diverse learning disabilities.</li>
+                        <li>Provide targeted, individualized (one-on-one) and small-group language assistance to build fluency and comprehension.</li>
+                        <li>Co-plan and adapt core classroom curriculum and materials alongside lead teachers to ensure accessibility.</li>
+                        <li>Nurture student confidence, self-advocacy, and academic independence.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-header">
+                        <h3>HEOP Mentor</h3>
+                        <span class="timeline-date">2022 - 2024</span>
+                    </div>
+                    <span class="company">Rochester Institute of Technology</span>
+                    <ul>
+                        <li>Mentored incoming first-year HEOP students to support their academic transition and social integration.</li>
+                        <li>Provided strategic guidance, resources, and regular check-ins that directly boosted student retention and long-term success.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-header">
+                        <h3>Teaching Assistant</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <span class="company">Rochester Institute of Technology</span>
+                    <ul>
+                        <li>Supported daily instructional delivery, objective grading, and targeted student learning interventions.</li>
+                        <li>Collaborated with faculty to design, develop, and coordinate active and engaging classroom experiences.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="featured-lesson" class="section glass-card">
+    <div class="lesson-header">
+        <span class="badge">Featured Curriculum Design</span>
+        <h2 class="section-title">1st Grade ENL Lesson Plan: Main Topic & Supporting Details</h2>
+        <p class="lesson-subtext">
+            <strong>Target Audience:</strong> 1st Grade | <strong>Model:</strong> Push-in ENL | <strong>Domain:</strong> ELA / Science Integration
+        </p>
+    </div>
+
+    <div class="lesson-stats-grid">
+        <div class="stat-card">
+            <h4>Standards Aligned</h4>
+            <p>NYS ELA RI.1.2 & WIDA Standards 1 & 2</p>
+        </div>
+        <div class="stat-card">
+            <h4>Core Strategy</h4>
+            <p>Visual Scaffolding & Sentence Frames</p>
+        </div>
+        <div class="stat-card">
+            <h4>Anchor Text</h4>
+            <p><em>Deserts</em> by Q. M. Arnold</p>
+        </div>
+    </div>
+
+    <div class="lesson-body grid-2">
+        <div class="lesson-column">
+            <h3>Lesson Objectives</h3>
+            <ul>
+                <li><strong>Content:</strong> Students will identify the main topic of an informational text using visuals and environmental details.</li>
+                <li><strong>Language:</strong> Students will produce academic speech using structured sentence frames: <em>"The main topic is ___."</em></li>
+                <li><strong>Social-Emotional:</strong> Structured Turn-and-Talk routines to foster safe risk-taking and collaborative peer interaction.</li>
+            </ul>
+        </div>
+        
+        <div class="lesson-column">
+            <h3>Research-Based Scaffolds (SIOP Model)</h3>
+            <ul>
+                <li><strong>Think-Aloud Modeling:</strong> Making invisible reading processes visible to Entering ENL learners.</li>
+                <li><strong>Visual Scaffolding:</strong> Utilizing high-quality imagery of environments (Deserts, Oceans, Forests) to build schema.</li>
+                <li><strong>Culturally Responsive Extension:</strong> Home-literacy connection encouraging learners to discuss main topics using their home languages.</li>
+            </ul>
+        </div>
+    </div>
+
+   <div class="lesson-footer">
+        <a href="EDL603_WASHINGTON_ROZARIO_LESSON_1.pdf" target="_blank" class="btn primary">
+            📄 View Lesson Plan (PDF)
+        </a>
+        
+        <a href="EDL603_LESSON_PRESENTATION.pdf" target="_blank" class="btn secondary">
+            📊 View Lesson Slides
+        </a>
+    </div>
+
+</section>
+
+        <section id="education" class="section grid-2">
+            
+            <div class="glass-card">
+                <h2 class="section-title">Education</h2>
+                <div class="edu-item">
+                    <h3>M.S. TESOL (In Progress)</h3>
+                    <p class="institution">College of Staten Island, CUNY</p>
+                </div>
+                <div class="edu-item">
+                    <h3>B.S. New Media Design</h3>
+                    <p class="institution">Rochester Institute of Technology</p>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-item">
+                    <h3>New York State ESOL (PreK-12)</h3>
+                    <p class="institution">Transitional B Certificate</p>
+                    <span class="badge badge-accent">Expected September 2026</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="section glass-card contact-card">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>I am open to ENL/TESOL teaching opportunities across NYC public and independent schools.</p>
+            <div class="contact-links">
+                <a href="mailto:Rwashington19@schools.nyc.gov" class="contact-btn">
+                    📧 Rwashington19@schools.nyc.gov
+                </a>
+                <a href="tel:6467254445" class="contact-btn">
+                    📞 (646) 725-4445
+                </a>
+                <div class="contact-btn">
+                    📍 Brooklyn, NY
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rozario Washington. All Rights Reserved.</p>
+    </footer>
+
+<button id="backToTop" title="Go to top">↑</button>
+
+<script>
+    const backToTopBtn = document.getElementById("backToTop");
+
+    // Show button when scrolled down 300px
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    };
+
+    // Scroll to top when clicked
+    backToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
