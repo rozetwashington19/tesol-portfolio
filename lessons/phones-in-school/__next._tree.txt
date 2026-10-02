@@ -1,0 +1,2 @@
+:HL["/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"lessons","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"phones-in-school","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"yox3edc_VRQvIpCJXydjt"}

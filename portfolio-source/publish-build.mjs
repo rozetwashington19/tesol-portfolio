@@ -1,0 +1,12 @@
+import { spawnSync } from 'node:child_process';
+import { cpSync, existsSync } from 'node:fs';
+import { dirname, resolve, basename } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const source = dirname(fileURLToPath(import.meta.url));
+if (basename(source) !== 'portfolio-source') throw new Error('Run this script from the repository portfolio-source folder.');
+const result = spawnSync(process.execPath, ['node_modules/next/dist/bin/next', 'build', '--webpack'], { cwd: source, stdio: 'inherit', env: { ...process.env, NEXT_PUBLIC_BASE_PATH: '/tesol-portfolio' } });
+if (result.status !== 0) process.exit(result.status || 1);
+const output = resolve(source, 'out');
+if (!existsSync(resolve(output, 'index.html'))) throw new Error('Build output is missing index.html.');
+cpSync(output, resolve(source, '..'), { recursive: true });
+console.log('Website files updated. Commit source and generated files, then push main to publish.');

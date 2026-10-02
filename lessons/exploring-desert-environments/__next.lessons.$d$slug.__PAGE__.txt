@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[2852,["107","static/chunks/107-02671d85f2120616.js","786","static/chunks/786-352178eb8a118791.js","852","static/chunks/852-7cb582f73a7dd269.js","776","static/chunks/app/lessons/%5Bslug%5D/page-d04aa42e76c2ea7a.js"],"CaseStudy"]
+3:I[6015,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[6015,[],"ViewportBoundary"]
+9:I[6015,[],"MetadataBoundary"]
+a:I[5102,[],"IconMark"]
+c:I[8470,[],""]
+d:I[2156,[],""]
+:HL["/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","style"]
+7:X
+f:X
+f:C
+0:{"buildId":"yox3edc_VRQvIpCJXydjt","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"lesson":{"slug":"exploring-desert-environments","number":"04","title":"Exploring Desert Environments","subtitle":"See. Name. Wonder.","band":"Early elementary","grade":"K–1","subject":"Science + Language Development","level":"Entering–Emerging","duration":"3 short sessions","description":"An early-years unit concept using images, bilingual labels, talk, and a collaborative habitat poster.","imageKey":"desert","status":"Illustrative unit concept","tags":["Vocabulary","Picture-supported talk","Collaborative poster"],"standard":"WIDA Standard 4: Language for Science","languageUse":"Inform + Explain","challenge":"How can beginning multilingual learners share observations before they can produce extended English?","context":"A hypothetical K–1 class explores a hot desert habitat. This is a sample unit concept, distinct from the completed Grade 2 lesson.","contentObjective":"Notice features of a desert and match a pictured animal to its habitat.","languageObjective":"Name a pictured feature and use “I see ___” or “The desert is ___” with visuals or partner support.","frames":[["I see ___.","Veo ___."],["The desert is dry.","El desierto es seco."]],"sequence":[["Session 1 · Notice","Use See–Think–Wonder and model picture-supported observations."],["Session 2 · Name and connect","Practice desert/desierto, water/agua, and shade/sombra; sort animal and habitat cards."],["Session 3 · Create","Work together on a habitat poster with bilingual labels and one oral explanation each."]],"activity":"A collaborative poster combines drawings, labeled picture cards, and student dictation. Each learner contributes through pointing, naming, drawing, or a supported sentence.","assessment":"Use a child-friendly “I can notice / I can name / I can explain” check. Observe the understanding behind a point, drawing, or utterance before deciding what support comes next.","reflection":"Short repeated routines give young learners familiarity. Images and home-language connections support access while students build confidence participating in English.","gallery":[],"note":"Illustrative concept: lesson slides, images, and a dedicated downloadable unit are not yet supplied. The completed Grade 2 desert PDF is available as a separate case study."}}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#08090a"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Exploring Desert Environments | Rozario Washington"}],["$","meta","1",{"name":"description","content":"An early-years unit concept using images, bilingual labels, talk, and a collaborative habitat poster."}],["$","link","2",{"rel":"icon","href":"/tesol-portfolio/favicon.svg"}],["$","$La","3",{}]]}]}]}],null]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@e","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@10","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404 / PAGE NOT FOUND"}],["$","h1",null,{"children":"Let’s find your way back."}],"$L11"]}],[]]}]}]}]]}],"isPartial":"$@12","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+15:I[2107,["107","static/chunks/107-02671d85f2120616.js","345","static/chunks/app/not-found-cbabebab5cf8942a.js"],""]
+5:null
+11:["$","$L15",null,{"className":"button button-light","href":"/","children":"Return to the portfolio"}]
+7:300
+14:true
+7:C
+13:0
+b:"$undefined"
+e:"$undefined"
+10:"$undefined"
+12:"$undefined"
+6:"$undefined"

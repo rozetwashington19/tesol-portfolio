@@ -1,0 +1,17 @@
+1:"$Sreact.fragment"
+2:I[8470,[],""]
+3:I[2156,[],""]
+4:I[2107,["107","static/chunks/107-02671d85f2120616.js","345","static/chunks/app/not-found-cbabebab5cf8942a.js"],""]
+5:I[6015,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+9:I[6015,[],"ViewportBoundary"]
+b:I[6015,[],"MetadataBoundary"]
+d:I[8910,[],"default",1]
+:HL["/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","style"]
+8:X
+0:{"P":null,"c":["","_not-found",""],"q":"","i":false,"f":[[["",{"children":["_not-found",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404 / PAGE NOT FOUND"}],["$","h1",null,{"children":"Let’s find your way back."}],["$","$L4",null,{"className":"button button-light","href":"/","children":"Return to the portfolio"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404 / PAGE NOT FOUND"}],["$","h1",null,{"children":"Let’s find your way back."}],["$","$L4",null,{"className":"button button-light","href":"/","children":"Return to the portfolio"}]]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,null]},null,false,"$8"]},null,false,null],["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],null]}],false]],"m":"$undefined","G":["$d",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"yox3edc_VRQvIpCJXydjt"}
+8:C
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#08090a"}]]
+e:I[5102,[],"IconMark"]
+7:null
+c:[["$","title","0",{"children":"Rozario Washington | ENL / TESOL Educator"}],["$","meta","1",{"name":"description","content":"Language, culture, and thoughtful learning design. Explore Rozario Washington’s bilingual ENL lessons and teaching practice."}],["$","link","2",{"rel":"icon","href":"/tesol-portfolio/favicon.svg"}],["$","$Le","3",{}]]

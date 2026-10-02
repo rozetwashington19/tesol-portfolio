@@ -1,0 +1,21 @@
+1:"$Sreact.fragment"
+2:I[2852,["107","static/chunks/107-02671d85f2120616.js","786","static/chunks/786-352178eb8a118791.js","852","static/chunks/852-7cb582f73a7dd269.js","974","static/chunks/app/page-ec4253854877ff90.js"],"PortfolioHome"]
+3:I[6015,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[6015,[],"ViewportBoundary"]
+9:I[6015,[],"MetadataBoundary"]
+a:I[5102,[],"IconMark"]
+c:I[8470,[],""]
+d:I[2156,[],""]
+e:I[2107,["107","static/chunks/107-02671d85f2120616.js","345","static/chunks/app/not-found-cbabebab5cf8942a.js"],""]
+:HL["/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","style"]
+7:X
+0:{"buildId":"yox3edc_VRQvIpCJXydjt","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#08090a"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Rozario Washington | ENL / TESOL Educator"}],["$","meta","1",{"name":"description","content":"Language, culture, and thoughtful learning design. Explore Rozario Washington’s bilingual ENL lessons and teaching practice."}],["$","link","2",{"rel":"icon","href":"/tesol-portfolio/favicon.svg"}],["$","$La","3",{}]]}]}]}],null]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/tesol-portfolio/_next/static/css/e4a2c5636462b753.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404 / PAGE NOT FOUND"}],["$","h1",null,{"children":"Let’s find your way back."}],["$","$Le",null,{"className":"button button-light","href":"/","children":"Return to the portfolio"}]]}],[]]}]}]}]]}],"isPartial":"$@f","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@10","rootVaryParams":null,"needsRuntimeRequest":"$@11"}
+5:null
+7:300
+11:true
+7:C
+10:0
+b:"$undefined"
+f:"$undefined"
+6:"$undefined"
